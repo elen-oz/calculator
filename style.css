@@ -1,26 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 body {
-  text-align: center;
-  margin: 10px;
-  font-family: Verdana, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
+  background-color: #e5e5e5;
+  color: #828282;
+  padding-top: 3rem;
   font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
+  font-family: Roboto, sans-serif;
   display: inline-block;
-  margin: 20px auto;
-  border: 2px solid #eee;
-  padding: 10px 20px;
-  font-family: Verdana, Arial, sans-serif;
+  text-align: center;
+  margin: 5px auto;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
   font-size: 16px;
+  color: #828282;
 }
 
 button {
-  font-family: Verdana, Arial, sans-serif;
+  width: 80px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+
   font-size: 16px;
-  margin: 10px;
+  color: #828282;
+  margin: 5px;
   padding: 10px;
+}
+
+.math-sign {
+  width: 40px;
 }
 
 .light {
   background-color: #aaa;
+}
+
+#result {
+  max-width: 200px;
+  border: 2px solid #c6c5c5;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  text-align: center;
 }
