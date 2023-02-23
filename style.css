@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=VT323&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'VT323', monospace;
   background-color: #e5e5e5;
   color: #828282;
   padding-top: 3rem;
@@ -18,7 +20,7 @@ body {
 }
 
 input {
-  font-family: Roboto, sans-serif;
+  font-family: 'VT323', monospace;
   display: inline-block;
   text-align: center;
   margin: 5px auto;
@@ -31,6 +33,7 @@ input {
 }
 
 button {
+  font-family: 'Chakra Petch', sans-serif;
   width: 80px;
   border: 1px solid #eee;
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
@@ -41,6 +44,7 @@ button {
   color: #828282;
   margin: 5px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .math-sign {
@@ -52,11 +56,11 @@ button {
 }
 
 #result {
-  max-width: 200px;
+  width: 200px;
   border: 2px solid #c6c5c5;
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 20px;
   background: #f7f6f7;
-  padding: 0.8rem 1rem;
+  padding: 1.5em 1.5rem;
   text-align: center;
 }
