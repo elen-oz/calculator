@@ -32,8 +32,37 @@ document.getElementById('num2').addEventListener('keydown', function (e) {
 
 function func() {
   let result;
-  let num1 = Number(document.getElementById('num1').value);
-  let num2 = Number(document.getElementById('num2').value);
+
+  let num1_str = String(document.getElementById('num1').value);
+  let num2_str = String(document.getElementById('num2').value);
+
+  if (num1_str.length == 0 || num1_str.indexOf(' ') !== -1) {
+    document.getElementById('result').innerHTML =
+      'You did not enter the first number or you added a space in the input field';
+    return;
+  }
+
+  if (num2_str.length == 0 || num2_str.indexOf(' ') !== -1) {
+    document.getElementById('result').innerHTML =
+      'You did not enter the second number or you added a space in the input field';
+    return;
+  }
+
+  let num1 = Number(num1_str);
+  let num2 = Number(num2_str);
+
+  if (isNaN(num1)) {
+    document.getElementById('result').innerHTML =
+      'The calculator cannot recognize the first number. Check it out please';
+    return;
+  }
+
+  if (isNaN(num2)) {
+    document.getElementById('result').innerHTML =
+      'The calculator cannot recognize the second number. Check it out please';
+    return;
+  }
+
   switch (op) {
     case '+':
       result = num1 + num2;
