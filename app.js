@@ -63,6 +63,12 @@ function func() {
     return;
   }
 
+  if (num1 > 99999999 || num2 > 99999999) {
+    document.getElementById('result').innerHTML =
+      'The calculator can work with numbers no more than 99 999 999';
+    return;
+  }
+
   switch (op) {
     case '+':
       result = num1 + num2;
