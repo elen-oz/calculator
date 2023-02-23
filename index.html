@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
   <title>Calculator</title>
 </head>
 
@@ -22,6 +23,7 @@
   <br>
 
   <button onclick="func()">Count</button>
+  <br>
   <p id="result"></p>
 
   <script>
@@ -29,8 +31,8 @@
 
     function func() {
       let result;
-      let num1 = Number(document.getElementById("bum1").value);
-      let num2 = Number(document.getElementById("bum2").value);
+      let num1 = Number(document.getElementById("num1").value);
+      let num2 = Number(document.getElementById("num2").value);
       switch (op) {
         case '+':
           result = num1 + num2;
