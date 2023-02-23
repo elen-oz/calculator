@@ -82,6 +82,8 @@ function func() {
     case '/':
       result = num1 / num2;
       break;
+    default:
+      result = 'Select a math action';
   }
 
   document.getElementById('result').innerHTML = result;
